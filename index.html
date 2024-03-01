@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Metadata for image, video and audio captioning training datasets</title>
+  </head>
+  <body style="background-color: #f5f5dc">
+      
+      <div class = "body_title">
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Metadata for image, video and audio captioning training datasets</a>
+        </nav>
+      </div>
+      
+      <div class="body_content" style="margin:20px; text-align: justify">
+        <p>In project LINDA (Using Language to Interpret Nonstructured Data) we conducted a metadata analysis of training datasets used in automatic captioning. We provide the metadata of 66 image, video and audio captioning training datasets, which can be used for finding suitable datasets and for other research purposes. </p>
+
+        <p><a href="Captioning%20datasets%20metadata%20for%20GitHUB.xlsx" target="_blank">This file</a> includes a list of captioning training datasets alongside information about their compilation principles (e.g., source data, number of captions). The file includes a codebook with information about the variables. For details regarding selection criteria for the initial list, please see Hekanaho, Hirvonen & Virtanen (forthcoming). The metadata file is available for research purposes and can be amended (updated versions to follow). Please cite the following article if the metadata is used for research.</p>
+
+        <p>Citation: Hekanaho, L., Hirvonen, M. & Virtanen, T. (forthcoming). Language-based machine perception: Linguistic perspectives on the compilation of captioning datasets. Digital Scholarship in the Humanities. </p>
+
+        <p> <b>Contact: </b> <br>
+        <a href="https://researchportal.helsinki.fi/en/persons/laura-hekanaho" target="_blank">Laura Hekanaho </a> laura.hekanaho@helsinki.fi <br>
+        <a href="https://www.tuni.fi/fi/maija-hirvonen" target="_blank">Maija Hirvonen </a> maija.hirvonen@tuni.fi <br>
+        <a href="https://homepages.tuni.fi/tuomas.virtanen/" target="_blank">Tuomas Virtanen</a> tuomas.virtanen@tuni.fi  </p>
+      </div>
+      
+      <div class = "body_table" id="dataset-table" style="margin:20px; text-align: justify; display: inline-block;">
+          <h4> Overview of datasets </h4>
+          
+          <table class="table" style="display: inline-table;">
+              <thead class="thead-dark">
+                <tr>
+                  <th >#</th> <th>Dataset name</th> <th>Modality</th> <th>Language</th>
+                </tr>
+              </thead>
+              
+              <tbody>
+                <!-- rows will be added from js since there are too many to add manually!-->
+              </tbody>
+          </table>
+      
+      
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+    const datasetData = [
+        ["ActivityNet Captions", "video", "EN"],
+        ["ActivityNet Entities", "video", "EN"],
+        ["AudioCaps", "audio", "EN"],
+        ["BreakingNews", "image", "EN"],
+        ["CapGaze (includes capgaze1 and capgaze2)", "image", "EN"],
+        ["Conceptual Captions","image","EN"],
+        ["CC12M","image","EN"], 
+        ["Charades","video", "EN"],
+        ["Clotho", "audio","EN"], 
+        ["Concadia", "image", "EN"], 
+        ["Crossmodal-3600",  "image", "36 languages"], 
+        ["DenseCap",  "image", "EN"], 
+        ["Flickr30k", "image", "EN"], 
+        ["Flickr8k", "image", "EN"], 
+        ["FlickrStyle10K", "image (+caption)", "EN"], 
+        ["PASCAL",  "image", "EN"], 
+        ["Flickr8k-CN", "image", "EN, CN"],
+        ["Multi30k 2016", "image", "EN, DE"],
+    ["Multi30k 2017 (caption information for French)", "image", "EN, FR, (DE)"],
+    ["Multi30k 2018 (caption information for Czech)", "image", "EN, CZE, (DE, FR)"],
+    ["Dutch Descriptions to Flickr30k", "image", "EN, NL (DE)"],
+    ["GoodNews", "image", "EN"],
+    ["GoogleRefExp", "image", "EN"],
+    ["Hephaestus", "image", "EN"],
+    ["How2R", "video", "EN"],
+    ["HowTo100M", "video", "EN"],
+    ["Image Paragraph Captioning", "image", "EN"],
+    ["InFashAI", "image", "EN"],
+    ["Kinetics-GEB+", "video", "EN"],
+    ["Laion-5B", "image", "EN, RU, FR, DE, ES, CN"],
+    ["Localized Narratives", "image", "EN"],
+    ["MACS", "audio", "EN"],
+    ["MMAC Captions", "video", "EN"],
+    ["MAD", "video", "EN"],
+    ["MPII-MD", "video", "EN"],
+    ["MS COCO Captions (includes MS COCO c5 and MS COCO c40)", "image", "EN"],
+    ["DeCOCO", "image", "EN, DE"],
+    ["COCO-CN", "image", "EN, CN"],
+    ["MIC test data", "image", "EN, DE, FR"],
+    ["UIT-ViLC", "image", "EN, VI"],
+    ["MSR-VTT-10K", "video", "EN"],
+    ["MSVD", "video", "EN"],
+    ["M-VAD", "video", "EN"],
+    ["nocaps", "image", "EN"],
+    ["NSVA", "video", "EN"],
+    ["PoseScript", "image", "EN"],
+    ["RedCaps", "image", "EN"],
+    ["ReferItGame", "image", "EN"],
+    ["RPCD", "image", "EN"],
+    ["RSICD", "image", "EN"],
+    ["SCICAP", "image", "EN"],
+    ["SentiCap", "image (+caption)", "EN"],
+    ["TACoS (original)", "video", "EN"],
+    ["TACoS Multi-level", "video", "EN"],
+    ["TextCaps", "image", "EN"],
+    ["TGIF (Tumblr GIF)", "video", "EN"],
+    ["VATEX", "video", "EN, CN"],
+    ["Violin", "video", "EN"],
+    ["Visual Genome", "image", "EN"],
+    ["VizWiz-Captions", "image", "EN"],
+    ["WebLI", "image", "109 languages"],
+    ["WebVid-2M", "video", "EN"],
+    ["WikiScenes", "image", "EN, FR, ES"],
+    ["Winoground", "image", "EN"],
+    ["WIT", "image", "108 languages"],
+    ["YouCook", "video", "EN"],
+    ["YouCook2", "video", "EN"],
+    ["YJ Captions 26k Dataset", "image", "EN, JA"]
+        // Add more dataset data here
+    ];
+
+    // Get the table body
+        const tbody = document.querySelector("#dataset-table tbody");
+
+    // Generate table rows dynamically
+        datasetData.forEach((data, index) => {
+            const row = document.createElement("tr");
+            row.innerHTML = `<td>${index+1}</td>`; 
+            data.forEach(cellData => {
+            const cell = document.createElement("td");
+            cell.textContent = cellData;
+            row.appendChild(cell);
+        });
+        tbody.appendChild(row);
+    });
+    </script>
+  </body>
+</html>
